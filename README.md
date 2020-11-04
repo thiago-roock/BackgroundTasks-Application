@@ -16,7 +16,7 @@ Após a instalação, você pode executar `dotnet new -l` para listar todos os t
 
 Para criar um novo projeto com o modelo de trabalho, você pode executar o comando conforme o exemplo abaixo
 ```
-dotnet new buildingblock -n Sample -p ci-work-sample -o ci-work-sample
+dotnet new work -n Sample -p ci-work-sample -o ci-work-sample
 ```
 * Nome da solução: -n
 * Nome do repositório Gitlab: -p
