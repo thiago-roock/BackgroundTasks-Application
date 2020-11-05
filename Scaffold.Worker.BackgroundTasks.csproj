@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Version>1.0.0</Version>
+    <PackageId>CodInsights.Scaffold.Worker.BackgroundTasks</PackageId>
+    <Title>Scaffold Worker</Title>
+    <Authors>CodInsights</Authors>
+    <Description>Scaffold with a demo to develop Workers (BackgroundTasks)</Description>
+    <PackageTags>dotnet-new;templates;scaffold;background-tasks</PackageTags>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="**\*" Exclude="**\bin\**\*;**\obj\**\*;**\.vs\**\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="content/**/*.cs" />
+  </ItemGroup>
+</Project>
