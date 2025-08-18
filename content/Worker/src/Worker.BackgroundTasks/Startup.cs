@@ -19,6 +19,7 @@ namespace Worker.BackgroundTasks
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddExternalServices(_configuration, _env);
+            services.AddHealthChecks();
         }
 
         public void Configure(IApplicationBuilder app)
